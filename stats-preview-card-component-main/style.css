@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+:root{
+	--Very-dark-blue: hsl(233, 47%, 7%);/* (main background)*/
+--Dark-desaturated-blue : hsl(244, 38%, 16%);/*(card background)*/
+--Soft-violet : hsl(277, 64%, 61%);/*(accent)*/
+
+--White: hsl(0, 0%, 100%);/*(main heading, stats)*/
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.75);/*(main paragraph):*/
+--Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);/*(stat headings)*/
+
+}
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Lexend Deca', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background:var(--Very-dark-blue);
+	font-size: 15px;
+}
+
+.container{
+	width: 100%;
+	padding: 100px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.container #text{
+	color: var(--Soft-violet);
+}
+.container .component-left{
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	width: 50%;
+	height: 60vh;
+	padding:30px 30px 30px 45px;
+	background:var(--Dark-desaturated-blue);
+	color: #ffffff;
+}
+.container .component-left h2{
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+	color:var(--White);
+	font-size: 2.5rem;
+	padding: 10px 10px 10px 10px;
+}
+.container .component-left p{
+	width: 90%;
+	text-align: left;
+	line-height: 25px;
+	color:var(--Slightly-transparent-white);
+	padding: 25px 30px 30px 10px;	
+}
+.container .component-right{
+	width: 500px;
+	background-image: url('./images/image-header-desktop.jpg');
+	background-repeat: no-repeat;
+	height: 60vh;
+	background-position: center;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+
+}
+.container .status ul{
+	list-style: none;
+	display: inline-flex;
+
+}
+.container .status ul li{
+	color: hsla(0, 0%, 100%, 0.6);
+	text-transform: uppercase;
+	padding:0px 30px 0px 20px;
+}
+.container .status #number{
+	font-family: 'Inter', sans-serif;
+	padding-bottom: 5px;
+	color: #ffffff;
+	font-size: 1.2rem;
+}
+.container .status #num1{
+	padding-left: 10px;
+}
+.container .component-right .overlay{
+	background:hsl(277, 64%, 75%);
+	height: 100%;
+	mix-blend-mode: color-burn;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:375px){
+	.container{
+		flex-direction: column;
+	}
+}
