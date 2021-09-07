@@ -96,6 +96,40 @@ body{
 
 @media(max-width:375px){
 	.container{
-		flex-direction: column;
+		padding:40px 20px 20px 20px;
+		flex-direction: column-reverse;
 	}
+	.container .component-right{
+		width: 300px;
+		height: 40vh;
+		background-size: cover;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 0px;
+	}
+	.container .component-left{
+		width: 300px;
+		height: 75vh;
+		border-top-left-radius: 0px;
+		border-bottom-right-radius: 8px;
+		padding:30px 30px 30px 30px;
+	}
+	.container .component-left h2{
+		font-size: 1.5rem;
+		text-align: center;
+		padding:0px;
+	}
+	.container .component-left p{
+		text-align: center;
+		width: 100%;
+		padding:10px 0px 10px 0px;
+	}
+	.container .status ul{
+		display: block;
+	}
+	.container .status ul li{
+		text-align: center;
+		padding:10px 0px 25px 0px;
+	} 
+
 }
